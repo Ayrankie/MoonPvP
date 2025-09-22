@@ -1,0 +1,7 @@
+name: MoonPvP
+version: '1.0-SNAPSHOT'
+main: org.ayrankie.moonPvP.MoonPvP
+api-version: '1.21'
+prefix: MoonPvP
+authors: [ Ayrankie ]
+description: Main plugin of MoonPvP
