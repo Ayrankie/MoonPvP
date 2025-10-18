@@ -1,0 +1,83 @@
+name: MoonPvP
+version: '1.1-SNAPSHOT'
+main: org.ayrankie.moonPvP.MoonPvP
+api-version: '1.21'
+prefix: MoonPvP
+authors: [ Ayrankie ]
+description: Main plugin of MoonPvP
+commands:
+  mute:
+    description: Mute a player
+    usage: /<command> <player>
+    permission: moonpvp.mute
+    permission-message: You do not have permission to use this command.
+  kick:
+    description: Kick a player
+    usage: /<command> <player> <reason>
+    permission: moonpvp.kick
+    permission-message: You do not have permission to use this command.
+  gerivites:
+    description: Ceza kaldırma komutu.
+    usage: /gerivites <ceza_id> <sebep>
+    permission: moonpvp.revoke
+  chatlog:
+    description: View the chat log.
+    usage: /<command> <player>
+    permission: moonpvp.chatlog
+    permission-message: You do not have permission to use this command.
+  kanıt:  
+    description: Kanıt yükleme komutu.
+    usage: /kanıt <ceza_id> <link>
+    permission: moonpvp.kanit
+    permission-message: You do not have permission to use this command.
+  ban:
+    description: Ban a player
+    usage: /<command> <player> <reason>
+    permission: moonpvp.ban
+    permission-message: You do not have permission to use this command.
+  history:
+    description: View a player's punishment history.
+    usage: /<command> <player>
+    aliases: [ geçmiş ]
+    permission: moonpvp.history
+    permission-message: You do not have permission to use this command.
+  kontrol:
+    description: oyuncuyu kontrole alir.
+    usage: /<command> <player>
+    aliases: [ kontrol ]
+    permission: moonpvp.kontrol
+    permission-message: You do not have permission to use this command.
+  moonpvpreload:
+    description: Reload the plugin configuration.
+    usage: /<command>
+    permission: moonpvp.reload
+    permission-message: You do not have permission to use this command.
+  yetkiver:
+    description: Oyuncunun yetkisini değiştirir.
+    usage: /yetkiver <oyuncu> <yetki>
+    permission: moonpvp.yetkiver
+permissions:
+  moonpvp.mute:
+    description: Allows the player to mute other players.
+    default: op
+  moonpvp.kick:
+    description: Allows the player to kick other players.
+    default: op
+  moonpvp.gerivites:
+    description: Allows the player to remove penalties.
+    default: op
+  moonpvp.chatlog:
+    description: Allows the player to view the chat log.
+    default: op
+  moonpvp.kanit:
+    description: Allows the player to upload evidence.
+    default: op
+  moonpvp.ban:
+    description: Allows the player to ban other players.
+    default: op
+  moonpvp.revoke:
+    description: Allows the player to revoke punishments.
+    default: op
+  moonpvp.revoke.bypass:
+    description: Allows the player to bypass time/staff restriction when revoking punishments.
+    default: op
