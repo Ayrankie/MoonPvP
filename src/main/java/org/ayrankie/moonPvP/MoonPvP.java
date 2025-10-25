@@ -11,6 +11,7 @@ import org.ayrankie.moonPvP.Punishments.GUIs.BanGUI;
 import org.ayrankie.moonPvP.Punishments.GUIs.MuteGUI;
 import org.ayrankie.moonPvP.PvPListeners.PvPListener;
 import org.ayrankie.moonPvP.TAB.PermissionCommand;
+import org.ayrankie.moonPvP.TAB.TabListFormatter;
 import org.bukkit.plugin.java.JavaPlugin;
 import okhttp3.*;
 import java.io.IOException;
@@ -20,6 +21,7 @@ import java.time.format.DateTimeFormatter;
 public final class MoonPvP extends JavaPlugin {
 
     private static MoonPvP instance;
+    private TabListFormatter tabFormatter;
 
     private final OkHttpClient client = new OkHttpClient();
 
@@ -53,6 +55,19 @@ public final class MoonPvP extends JavaPlugin {
         getCommand("moonpvpreload").setExecutor(new ReloadCommand(this));
         getCommand("yetkiver").setExecutor(new PermissionCommand());
         getCommand("yetkiver").setTabCompleter(new PermissionCommand());
+
+
+
+        tabFormatter = new TabListFormatter(this);
+        tabFormatter.startAutoUpdateTask();
+
+        getServer().getPluginManager().registerEvents(new org.bukkit.event.Listener() {
+            @org.bukkit.event.EventHandler
+            public void onJoin(org.bukkit.event.player.PlayerJoinEvent e) {
+                tabFormatter.updateTabForAll();
+                tabFormatter.setTabHeaderFooter(e.getPlayer());
+            }
+        }, this);
     }
 
     private void sendServerStartedLog() {

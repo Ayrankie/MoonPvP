@@ -8,6 +8,7 @@ org\ayrankie\moonPvP\TAB\PermissionCommand.class
 org\ayrankie\moonPvP\Punishments\KickCommand.class
 org\ayrankie\moonPvP\Punishments\RevokeCommand.class
 org\ayrankie\moonPvP\Punishments\TempCommandMute$1.class
+org\ayrankie\moonPvP\TAB\TabListFormatter$1.class
 org\ayrankie\moonPvP\Punishments\GUIs\MuteGUI.class
 org\ayrankie\moonPvP\Punishments\Control\KontrolListener.class
 org\ayrankie\moonPvP\Punishments\KickCommand$1.class
@@ -15,6 +16,7 @@ org\ayrankie\moonPvP\Listeners\ChatFormatterListener.class
 org\ayrankie\moonPvP\ReloadCommand.class
 org\ayrankie\moonPvP\Database.class
 org\ayrankie\moonPvP\Punishments\Control\KontrolCommand.class
+org\ayrankie\moonPvP\MoonPvP$2.class
 org\ayrankie\moonPvP\Punishments\HistoryCommand.class
 org\ayrankie\moonPvP\Listeners\AdminLoginListener.class
 org\ayrankie\moonPvP\Punishments\BanCommand.class
@@ -23,4 +25,5 @@ org\ayrankie\moonPvP\Punishments\Chatlog\ChatLogger$ChatMessage.class
 org\ayrankie\moonPvP\Listeners\LoginListener.class
 org\ayrankie\moonPvP\Punishments\BanListener.class
 org\ayrankie\moonPvP\Punishments\PunishmentListeners.class
+org\ayrankie\moonPvP\TAB\TabListFormatter.class
 org\ayrankie\moonPvP\PvPListeners\PvPListener.class

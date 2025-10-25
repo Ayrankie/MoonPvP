@@ -1,5 +1,5 @@
 name: MoonPvP
-version: '1.1-SNAPSHOT'
+version: '1.2-RELEASE'
 main: org.ayrankie.moonPvP.MoonPvP
 api-version: '1.21'
 prefix: MoonPvP

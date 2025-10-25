@@ -6,7 +6,7 @@
 
     <groupId>org.ayrankie</groupId>
     <artifactId>moonpvp</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-RELEASE</version>
     <packaging>jar</packaging>
     <name>moonpvp</name>
 

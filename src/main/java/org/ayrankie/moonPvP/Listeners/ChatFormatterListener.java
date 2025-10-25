@@ -48,7 +48,7 @@ public class ChatFormatterListener implements Listener {
         } else if ("mod ".equalsIgnoreCase(groupName)){
             formattedName = "<gradient:#ff0101:#831010>" + p.getName() + "</gradient>";
         } else {
-            formattedName = "<white>" + p.getName() + "</white>";
+            formattedName = "<gray>" + p.getName() + "</gray>";
         }
 
         // Oyuncunun mesajı MiniMessage ile efektli
